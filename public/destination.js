@@ -1,9 +1,9 @@
 const changeDestinationPageBackground = () => {
     const destinationPage = document.getElementById(`destinationPage`)
     const destinationBackgroundImages = [
-        `/public/assets/destination/background-destination-mobile.jpg`,
-        `/public/assets/destination/background-destination-tablet.jpg`,
-        `/public/assets/destination/background-destination-desktop.jpg`
+        `assets/destination/background-destination-mobile.jpg`,
+        `assets/destination/background-destination-tablet.jpg`,
+        `assets/destination/background-destination-desktop.jpg`
     ]
 
     if(window.innerWidth < 640) {

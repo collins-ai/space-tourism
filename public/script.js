@@ -1,9 +1,9 @@
 const changeHomePageBackground = () => {
     const homePage = document.getElementById(`homePage`)
     const homeBackgroundImages = [
-        `/public/assets/home/background-home-mobile.jpg`,
-        `/public/assets/home/background-home-tablet.jpg`,
-        `/public/assets/home/background-home-desktop.jpg`
+        `assets/home/background-home-mobile.jpg`,
+        `assets/home/background-home-tablet.jpg`,
+        `assets/home/background-home-desktop.jpg`
     ]
 
     if(window.innerWidth < 640) {

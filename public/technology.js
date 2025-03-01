@@ -2,9 +2,9 @@ const changeTechnologyPageBackground = () => {
     const technologyPage = document.getElementById(`technologyPage`)
     const image = document.getElementById(`image`)
     const technologyBackgroundImages = [
-        `/public/assets/technology/background-technology-mobile.jpg`,
-        `/public/assets/technology/background-technology-tablet.jpg`,
-        `/public/assets/technology/background-technology-desktop.jpg`
+        `assets/technology/background-technology-mobile.jpg`,
+        `assets/technology/background-technology-tablet.jpg`,
+        `assets/technology/background-technology-desktop.jpg`
     ]
 
     if(window.innerWidth < 640) {

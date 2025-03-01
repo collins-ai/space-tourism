@@ -1,9 +1,9 @@
 const changeCrewPageBackground = () => {
     const crewPage = document.getElementById(`crewPage`)
     const crewBackgroundImages = [
-        `/public/assets/crew/background-crew-mobile.jpg`,
-        `/public/assets/crew/background-crew-tablet.jpg`,
-        `/public/assets/crew/background-crew-desktop.jpg`
+        `assets/crew/background-crew-mobile.jpg`,
+        `assets/crew/background-crew-tablet.jpg`,
+        `assets/crew/background-crew-desktop.jpg`
     ]
 
     if(window.innerWidth < 640) {
