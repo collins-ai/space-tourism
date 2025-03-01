@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+.destinationStyle {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 8px;
+}
+.crewStyle {
+    background-color: #ffffff;
+}
+.technologyStyle {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+}
+.toggleNavigation {
+    display: block;
+}
+.hideHamburger {
+    display: none;
+}

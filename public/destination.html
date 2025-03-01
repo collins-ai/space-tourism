@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="output.css">
+  <!-- JavaScript Link -->
+  <script defer src="script.js"></script>
+  <!-- Title -->
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body id="destinationPage" class="bg-no-repeat bg-cover min-h-screen text-gray-400 relative">
+  <header class="flex justify-between items-center p-6 sm:p-0 sm:ps-6 lg:pt-6">
+    <img src="assets/shared/logo.svg" alt="the website logo">
+    <div class="hidden lg:block bg-gray-700 h-0.5 w-screen ms-12 -me-6 z-10"></div>
+    <nav class="hidden sm:block fixed top-0 left-0 sm:static w-screen sm:w-fit" id="navigation">
+      <img src="assets/shared/icon-close.svg" alt="close icon" id="close" class="fixed top-10 right-6 sm:hidden">
+      <ul class="flex flex-col sm:flex-row items-center gap-6 lg:gap-12 px-6 lg:ps-24 lg:pe-36 py-10 sm:py-0 font-medium uppercase bg-gray-700/70">
+        <li><a href="/home.html" class="flex gap-2 lg:cursor-pointer"><span class="hidden lg:inline text-white">00</span><span class="text-white sm:text-gray-400 hover:text-white">Home</span></a></li>
+        <li><a href="destination.html" class="flex gap-2 lg:cursor-pointer border-b-2 border-b-white py-6"><span class="hidden lg:inline text-white">01</span><span class="text-white sm:text-gray-400 hover:text-white">Destination</span></a></li>
+        <li><a href="crew.html" class="flex gap-2 lg:cursor-pointer"><span class="hidden lg:inline text-white">02</span><span class="text-white sm:text-gray-400 hover:text-white">Crew</span></a></li>
+        <li><a href="technology.html" class="flex gap-2 lg:cursor-pointer"><span class="hidden lg:inline text-white">03</span><span class="text-white sm:text-gray-400 hover:text-white">Technology</span></a></li>
+      </ul>
+    </nav>
+    <img src="assets/shared/icon-hamburger.svg" alt="hamburger icon" id="hamburger" class="sm:hidden">
+  </header>
+  <main class="flex flex-col lg:flex-row justify-around lg:justify-evenly lg:items-end px-6 lg:px-0 h-[85vh] sm:h-[90vh] lg:h-[75vh]">
+    <div class="flex flex-col items-center gap-5 sm:gap-3 lg:gap-10 lg:basis-1/3">
+      <p class="uppercase tracking-widest sm:self-start lg:text-lg">
+        <span class="text-gray-700">01</span>
+        <span class="text-white">Pick your destination</span>
+      </p>
+      <img src="assets/destination/image-mars.png" alt="planets" id="destinationImage" class="w-1/2 sm:w-2/5 lg:w-10/12 lg:self-end">
+    </div>
+    <section class="flex flex-col items-center lg:items-start gap-5 sm:gap-3 lg:gap-5 lg:basis-1/3">
+      <ul class="flex gap-5 uppercase tracking-widest text-sm">
+        <li class="lg:cursor-pointer destination">Moon</li>
+        <li class="lg:cursor-pointer destination destinationStyle" id="mars">Mars</li>
+        <li class="lg:cursor-pointer destination">Europa</li>
+        <li class="lg:cursor-pointer destination">Titan</li>
+      </ul>
+      <h1 id="destinationName" class="text-6xl lg:text-8xl text-white uppercase">Mars</h1>
+      <p id="destinationDescription" class="text-center lg:text-start sm:w-2/3 lg:w-full">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+      <div class="bg-gray-700 h-0.5 w-full sm:w-2/3 lg:w-full"></div>
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 uppercase text-center lg:text-start">
+        <p class="flex flex-col">
+          <span class="text-sm">Avg. distance</span>
+          <span id="destinationDistance" class="text-white text-3xl">225 mil. km</span>
+        </p>
+        <p class="flex flex-col">
+          <span class="text-sm">Est. travel time</span>
+          <span id="destinationTravel" class="text-white text-3xl">9 months</span>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="absolute bottom-0 left-0 right-0 m-auto text-xs text-center">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-white">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/collins-ai" target="_blank" class="text-white">Sunday Collins</a>.
+    </p>
+  </footer>
+</body>
+</html>
